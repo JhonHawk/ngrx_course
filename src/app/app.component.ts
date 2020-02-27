@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ngrx-angular9';
+  contador: number;
+
+  constructor(){
+    this.contador = 10;
+  }
+
+  incrementar() {
+    this.contador ++;
+  }
+
+  decrementar(){
+    this.contador --;
+  }
 }
